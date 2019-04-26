@@ -1,11 +1,11 @@
-x = int(input("x : "))
-y = int(input("y : "))
+#6
+import random
 
-i=1
-result=0
-while i<x and i<y:
-    if x%i==0 and y%i==0:
-        result=i
-    i+=1
+a = [0,0,0,0,0,0]
 
-print(i)
+for i in range(600):
+    n = random.randint(1, 6)
+    a[n-1] += 1
+
+for k in range(1,7):
+    print('주사위가 %d 인 경우는 %d 번'%(k, a[k-1]))

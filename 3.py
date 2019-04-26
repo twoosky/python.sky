@@ -1,6 +1,9 @@
 #3
+customer = []
+for a in range(5):
+    name = input("고객이름 : ")
+    customer.append(name)
+    
+customer.sort()
 
-for a in range(1, 9+1, 1):
-    for b in range(1, 9+1, 1):
-        print(a*b, end = " ")
-    print("\n")
+print(customer)

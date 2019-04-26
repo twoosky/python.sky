@@ -1,9 +1,15 @@
-# 2
+#2
 
-n = 0
-i = 1000*10000
-while i < 2000*10000:
-    i = i*(1.07)
-    n = n + 1
+shopping_list = ["apple", "blueberry", "peach"]
 
-print("%d년 걸립니다."%n)
+shopping_list.append('melon')
+
+shopping_list.pop()
+
+shopping_list.insert(0, 'melon')
+
+shopping_list.remove('apple')
+
+shopping_list.pop(1)
+
+print(shopping_list)

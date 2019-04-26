@@ -1,8 +1,16 @@
 #4
+# reverse 이용
+customer = ["Jane", "Mark", "Tom", "Amy", "Bob "]
 
-n = int(input("put n : "))
+def reverseList1(a):
+    customer = a.reverse()
+def reverseList2(b):
+    temp = []
+    for i in range(len(b), -1):
+        temp.append(b[i])
+    customer =  temp
 
-for a in range(1, n):
-    a = a*(a+1)
-
-print("n! = %d"%a)
+reverseList1(customer)
+print(customer)
+reverseList2(customer)
+print(customer)
